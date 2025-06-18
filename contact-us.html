@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - SkillSwap</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .profile-image {
+      max-width: 120px;
+      border-radius: 9999px; /* fully rounded */
+      border: 3px solid #667eea;
+      transition: transform 0.3s ease;
+    }
+    .profile-image:hover {
+      transform: scale(1.05);
+      border-color: #764ba2;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="sticky top-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition">SkillSwap</a>
+      <nav class="hidden md:flex space-x-6 text-gray-700">
+        <a href="index.html#home" class="hover:text-blue-600 transition font-medium">Home</a>
+        <a href="index.html#skills" class="hover:text-blue-600 transition font-medium">Skills</a>
+        <a href="index.html#matches" class="hover:text-blue-600 transition font-medium">Matches</a>
+        <a href="index.html#profile" class="hover:text-blue-600 transition font-medium">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-16 md:py-24">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-12 text-center gradient-text">
+      Contact Us
+    </h1>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center mb-16">
+      We'd love to hear from you! Reach out to any of our team members below via LinkedIn for questions, feedback, or support.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 max-w-5xl mx-auto text-center">
+      <!-- Profile 1 -->
+      <a href="https://www.linkedin.com/in/brahamjeet-singh-31395b270/" target="_blank" rel="noopener" class="group" aria-label="LinkedIn Profile of Brahamjeet Singh">
+        <img 
+          src="photo.jpg" 
+          alt="Brahamjeet Singh LinkedIn Profile Picture" 
+          class="profile-image mx-auto mb-4"
+          onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1f483d84-009c-4368-90b5-64cad9414148.png';"
+        />
+        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-blue-700 transition">Brahamjeet Singh</h3>
+        <p class="text-blue-600 mt-1">LinkedIn Profile</p>
+      </a>
+
+      <!-- Profile 2 -->
+      <a href="https://www.linkedin.com/in/manas-chhabra-/" target="_blank" rel="noopener" class="group" aria-label="LinkedIn Profile of Manas Chhabra">
+        <img 
+          src="photo.jpg" 
+          alt="Manas Chhabra LinkedIn Profile Picture" 
+          class="profile-image mx-auto mb-4"
+          onerror="this.onerror=null;this.src='https://placehold.co/120x120/999999/ffffff?text=No+Image';"
+        />
+        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-blue-700 transition">Manas Chhabra</h3>
+        <p class="text-purple-600 mt-1">LinkedIn Profile</p>
+      </a>
+
+      <!-- Profile 3 -->
+      <a href="https://www.linkedin.com/in/tushar-pathneja-4307b1275/" target="_blank" rel="noopener" class="group" aria-label="LinkedIn Profile of Tushar Pathneja">
+        <img 
+          src="photo.jpg" 
+          alt="Tushar Pathneja LinkedIn Profile Picture" 
+          class="profile-image mx-auto mb-4"
+          onerror="this.onerror=null;this.src='https://placehold.co/120x120/999999/ffffff?text=No+Image';"
+        />
+        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-blue-700 transition">Tushar Pathneja</h3>
+        <p class="text-blue-600 mt-1">LinkedIn Profile</p>
+      </a>
+
+      <!-- Profile 4 -->
+      <a href="https://www.linkedin.com/in/aayushi-mishra-6ab223297/" target="_blank" rel="noopener" class="group" aria-label="LinkedIn Profile of Aayushi Mishra">
+        <img 
+          src="photo.jpg" 
+          alt="Aayushi Mishra LinkedIn Profile Picture" 
+          class="profile-image mx-auto mb-4"
+          onerror="this.onerror=null;this.src='https://placehold.co/120x120/999999/ffffff?text=No+Image';"
+        />
+        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-blue-700 transition">Aayushi Mishra</h3>
+        <p class="text-purple-600 mt-1">LinkedIn Profile</p>
+      </a>
+    </div>
+
+    <div class="mt-20 text-center">
+      <a href="index.html" class="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-200" aria-label="Back to Home">
+        Back to Home
+      </a>
+    </div>
+  </main>
+
+
+  <!-- Font Awesome CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/js/all.min.js"></script>
+
+</body>
+</html>
+
+
